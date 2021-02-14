@@ -1,0 +1,24 @@
+.select-topic {
+    padding: 35px 60px;
+    width: 100%;
+
+    .topic-list{
+        margin: 35px 0;
+
+        a, a:hover, a:active, a:focus{
+            color: $grey-3;
+            text-decoration: none;
+
+            .title{
+                line-height: 35px;
+                letter-spacing: 0.3px;
+                font-weight: 500;
+                color: $grey-3;
+            }
+
+            .subtitle{
+                color: $grey-2;
+            }
+        }
+    }
+}

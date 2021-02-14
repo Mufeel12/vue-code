@@ -1,0 +1,28 @@
+.topic{
+    width: 100%;
+    padding: 15px;
+    border-top: 1px solid $grey-9;
+    border-bottom: 1px solid $grey-9;
+    margin-bottom: -1px;
+    cursor: pointer;
+
+    background-position: 95%;
+    background-image: url('~@/assets/images/arrow-right-1.svg');
+    background-repeat: no-repeat;
+    background-size: 15px;
+
+    &:hover{
+        background-color: $grey-10;
+    }
+
+    .title{
+        letter-spacing: -0.4px;
+        margin-bottom: 0;
+    }
+
+    .subtitle{
+        margin-bottom: 7px;
+
+        line-height: 15px;
+    }
+}

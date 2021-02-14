@@ -1,0 +1,40 @@
+.notification-bar {
+    border-left: 1px solid $white;
+    width: 80px;
+    height: 80px;
+    margin: -10px 0 -10px 0;
+    cursor: pointer;
+
+    background-image: url("~@/assets/images/communication/bell.png");
+    background-color: $burgundy;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+
+    &:hover, &:active, &:focus{
+        background-image: url("~@/assets/images/communication/bell-hovered.png");
+        background-color: $venetian-red;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .badge {
+        background-color: $yellow;
+        color: $white;
+        font-weight: 400;
+        margin: 12px 0 10px 44px;
+        font-size: 15px;
+        padding: 2px 5px;
+    }
+
+    .notification-dropdown{
+        position: absolute;
+        height: 330px;
+        width: 290px;
+        background-color: $white;
+        margin-top: 40px;
+        right: 0;
+        border: 1px solid $grey-9;
+        z-index: 999;
+    }
+}

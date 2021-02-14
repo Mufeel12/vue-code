@@ -1,0 +1,34 @@
+before_script:
+   - echo "[$CI_JOB_NAME] Job for $CI_PROJECT_NAME started by $GITLAB_USER_NAME"
+
+stages:
+  - build
+  - deploy
+
+build-project:
+  tags:
+    - shell-runner
+  stage: build
+  script:
+    - cp .env.staging .env #docker staging settings
+    - docker login -u gitlab-ci-token -p ${CI_JOB_TOKEN} ${CI_REGISTRY}
+    - docker-compose -f docker-compose.yml -f docker-compose.staging.yml build --pull
+    - docker-compose -f docker-compose.yml -f docker-compose.staging.yml push
+  only:
+    - staging
+
+deploy-staging:
+  stage: deploy
+  tags:
+    - shell-runner
+  environment:
+    name: review/$CI_COMMIT_REF_NAME
+  script:
+    - cp -u -p .env.staging .env #THIS IS FOR DOCKER!! -u update if newer, -p preserver permissions, -n do not copy if exists
+    - docker login -u gitlab-ci-token -p ${CI_JOB_TOKEN} ${CI_REGISTRY}
+    - docker-compose -f docker-compose.yml -f docker-compose.staging.yml pull
+    - docker-compose -f docker-compose.yml -f docker-compose.staging.yml down
+    - docker-compose -f docker-compose.yml -f docker-compose.staging.yml up -d
+  only:
+    - staging
+  when: on_success

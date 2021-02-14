@@ -1,0 +1,78 @@
+.training-aside {
+    flex: 0 0 240px;
+    border-right: 1px solid #E2E2E2;
+    padding: 28px 0;
+
+    @include media-breakpoint-down(sm) {
+        display: none;
+        padding: 0;
+    }
+
+    .lg-logo {
+        img {
+            max-width: 167px;
+            pointer-events: none;
+            user-select: none;
+        }
+    }
+
+    .navbar-cover {
+        margin-top: 109px;
+
+        .nav{
+            display: block;
+        }
+
+        .nav, .sub-nav {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            .item{
+                margin-bottom: 20px;
+            }
+        }
+
+        .sub-nav {
+            padding-left: 16px;
+            margin-top: 22px;
+            position: relative;
+
+            &:before {
+                content: '';
+                width: 1px;
+                height: calc(100% - 9px);
+                position: absolute;
+                top: 7px;
+                left: 0;
+                background-color: $white-4;
+            }
+
+            .item {
+                + .item {
+                    margin-top: 14px;
+                }
+            }
+
+            .link {
+                color: $grey-2;
+
+                &:hover {
+                    color: darken($grey-2, 20%);
+                }
+            }
+        }
+
+        .link {
+            font-size: 20px;
+            text-decoration: none;
+            color: $grey-3;
+            font-weight: 300;
+            letter-spacing: 0.03rem;
+        }
+
+        .current{
+            color: $burgundy !important;
+        }
+    }
+}

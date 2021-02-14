@@ -1,0 +1,44 @@
+.main_prize {
+  border: 1px solid $silver;
+  border-radius: 3px;
+  padding: 20px;
+  @include media-breakpoint-down(sm) {
+    padding: 10px;
+    min-height: 152px;
+  }
+  p {
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+  }
+  .prize_pic {
+    float: left;
+    width: 140px;
+
+    text-align: center;
+    @include media-breakpoint-down(sm) {
+      position: relative;
+      text-align: center;
+    }
+    img{
+      max-height: 120px;
+      max-width: 100%;
+    }
+  }
+  .prize_tag {
+    font-size: 20px;
+    font-weight: 600;
+    color: $grey-3;
+  }
+  .prize_name {
+    color: $grey-2;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .loadprize {
+    color: $burgundy !important;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: underline;
+  }
+}

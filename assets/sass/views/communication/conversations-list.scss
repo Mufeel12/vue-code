@@ -1,0 +1,10 @@
+.conversations-list{
+    flex: 0 0 32%;
+    border-right: 1px solid $grey-9;
+    overflow-y: scroll;
+
+    a, a:hover, a:focus, a:active, .top{
+        text-decoration-line: none !important;
+        text-decoration: none !important;
+    }
+}

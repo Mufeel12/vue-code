@@ -1,0 +1,21 @@
+.table-list {
+  width: 100%;
+  .table-row {
+    font-size: 1.25rem;
+    border-bottom: 1px solid $white-2;
+    th,
+    td {
+      padding: 1.25rem 0;
+    }
+
+    th {
+      font-weight: normal;
+      color: $grey-3;
+    }
+
+    td {
+      color: $grey-1;
+      text-align: right;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.communication{
+    height: 100%;
+}
+
+.communication-content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-height: calc(100vh - 186px);
+    height: calc(100vh - 186px);
+}

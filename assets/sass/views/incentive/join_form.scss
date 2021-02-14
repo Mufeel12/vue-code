@@ -1,0 +1,152 @@
+.form-box {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 3px;
+  border: 1px solid $silver;
+  .form-section {
+    padding-left: 30px;
+    padding-right: 30px;
+    @include media-breakpoint-down(sm) {
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+  .submitting_submission {
+    opacity: 0.5;
+  }
+  .upload_document {
+    border: 1px solid $grey-9;
+    background-color: $white;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+
+    cursor: pointer;
+    .custom_file {
+      width: 100%;
+      opacity: 0;
+      cursor: pointer;
+    }
+    label {
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      left: 0;
+      top: 14px;
+      font-size: 20px;
+      line-height: 28px;
+      @include media-breakpoint-down(sm) {
+        font-size: 16px;
+      }
+    }
+  }
+  .form-control {
+    border: none;
+    border-bottom: solid 1px #a7a7a7 !important;
+    margin-bottom: 14px;
+    background: $white;
+    padding: 24px 2px 0 1px;
+  }
+  .addmore {
+    text-align: right;
+    a {
+      font-size: 20px;
+      line-height: 28px;
+      color: $burgundy;
+      text-decoration: underline;
+    }
+  }
+  .vs__search::-webkit-input-placeholder {
+    font-size: 18px;
+  }
+  .submit-div {
+    background-color: $white-2;
+    padding: 20px 0px;
+    text-align: center;
+    margin-top: 25px;
+    @include media-breakpoint-down(sm) {
+      padding: 15px;
+    }
+    .btn-primary {
+      @include media-breakpoint-down(sm) {
+        padding: 10px;
+        min-width: 100%;
+      }
+    }
+  }
+  .thnk-section {
+    padding: 15px;
+    background-color: $white-2;
+    border-radius: 3px;
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+    }
+    .thnk-img {
+      width: 100%;
+    }
+  }
+  label {
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 16px;
+    top: 35px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+    color: $grey-2;
+  }
+  /* active state */
+  input:focus ~ label,
+  input:valid ~ label {
+    top: 3px;
+    font-size: 14px;
+    color: #6b6b6b;
+  }
+  .bar {
+    position: relative;
+    display: block;
+    width: 300px;
+    &:before,
+    &:after {
+      content: "";
+      height: 2px;
+      width: 0;
+      bottom: 1px;
+      position: absolute;
+
+      transition: 0.2s ease all;
+      -moz-transition: 0.2s ease all;
+      -webkit-transition: 0.2s ease all;
+    }
+    &:before {
+      left: 50%;
+    }
+    &:after {
+      right: 50%;
+    }
+  }
+  .form-select {
+    .vs__search {
+      padding: 24px 0 0 12px;
+    }
+    .vs__actions {
+      padding: 24px 15px 0 0;
+    }
+    .vs__selected {
+      padding: 24px 0 0 0;
+    }
+    .v-select {
+      .vs__dropdown-toggle {
+        background-color: $white;
+        border-bottom: solid 1px #a7a7a7;
+        &:hover {
+          background-color: $white;
+        }
+      }
+    }
+  }
+}

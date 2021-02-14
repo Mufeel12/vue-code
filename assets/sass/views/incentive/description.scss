@@ -1,0 +1,97 @@
+.description {
+  padding: 28px 45px 0px 58px;
+  @include media-breakpoint-down(sm) {
+    padding: 28px 20px 0px 20px;
+  }
+  p {
+    color: $grey-2;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .bc-btn {
+    color: $burgundy;
+    padding-left: 5px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .bold_heading {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    color: $grey-3;
+  }
+  
+  .padd-15 {
+    padding: 0px 15px;
+  }
+  .green {
+    color: $green;
+    font-weight: 600;
+  }
+  .grey {
+    color: $grey-3;
+  }
+  .red_btn {
+    background-color: $burgundy;
+    color: $white;
+    display: block;
+    padding: 15px 16px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: $white;
+    border-radius: 3px;
+  }
+  .filename {
+    color: $burgundy !important;
+    font-size: 20px;
+    line-height: 28px;
+    text-decoration: underline;
+  }
+  .join_div {
+    padding: 31px;
+    background-color: $white-2;
+    border-radius: 3px;
+    border: 1px solid $silver;
+  }
+  .medium_text {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: $grey-3;
+  }
+  .product_content_box {
+    .headtext {
+      font-size: 24px;
+      line-height: 32px;
+      color: $grey-3;
+    }
+
+    .rules {
+      position: relative;
+      padding-left: 20px;
+      list-style: none;
+      li {
+        font-size: 20px;
+        color: $grey-2;
+        margin-bottom: 20px;
+        line-height: 28px;
+        list-style: none;
+        &::before {
+          position: absolute;
+          content: "";
+          width: 8px;
+          height: 8px;
+          background: $burgundy;
+          left: 0;
+          border-radius: 50%;
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+  .mb-60 {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}

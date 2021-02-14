@@ -1,0 +1,15 @@
+.complete {
+  .load_more {
+    display: block;
+    text-align: center;
+    border: 1px solid $silver;
+    padding: 15px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: $grey-8;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+  }
+}

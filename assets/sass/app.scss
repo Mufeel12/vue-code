@@ -1,0 +1,57 @@
+// variables
+@import "./base/variables";
+
+// vendor
+@import "~bootstrap";
+@import "~vue-select/src/scss/vue-select";
+
+// base
+@import "./base/mixins/import";
+@import "./base/fonts";
+@import "./base/general";
+
+// layouts
+@import "./layouts/import";
+
+// components
+@import "./components/import";
+
+// views
+@import "./views/import";
+
+.tooltip {
+  opacity: 1;
+}
+.v-tooltip {
+  top: 0px !important;
+  background-color: #333333;
+  background: #333333;
+  border-radius: 3px;
+  .tooltip-arrow {
+    width: 0;
+    bottom: -10px;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    margin: 5px;
+    border-color: #333333;
+  }
+  .submission-declined {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  h4{
+    margin-top:6px;
+  }
+}
+.tooltip-arrow {
+  border-width: 5px 5px 0 5px;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-bottom-color: transparent !important;
+  bottom: -5px;
+  left: calc(50% - 5px);
+  margin-top: 0;
+  margin-bottom: 0;
+}
+@import './views/import';

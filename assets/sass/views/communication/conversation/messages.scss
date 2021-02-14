@@ -1,0 +1,46 @@
+.conversation-messages{
+    display: table-row;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    .alert{
+        margin: 25px 0;
+        font-size: 20px;
+        padding: 17px 27px;
+        background-color: $grey-10;
+    }
+
+    .close{
+        height: 100%;
+    }
+
+    .times{
+        height: 20px;
+        width: auto;
+    }
+
+    .cell{
+        display: table-cell;
+        white-space: nowrap;
+        overflow: hidden;
+        -ms-text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        text-overflow: ellipsis;
+        padding: 0 60px;
+
+        .cell-content{
+            position: relative;
+            height: 100%;
+
+            .cell-scrollable{
+                overflow-y: scroll;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+            }
+        }
+    }
+}

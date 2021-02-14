@@ -1,0 +1,54 @@
+.winner_list {
+  .bd-lg-modal-xl {
+    background: $grey-11;
+  }
+  .heading {
+    font-size: 48px;
+  }
+  .show {
+    transition: opacity 0.15s linear;
+    display: block;
+  }
+  .modal-header {
+    padding-left: 60px;
+    padding-right: 60px;
+    border-bottom: none;
+    .close {
+      span {
+        font-size: 35px;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .all_prize {
+    border: none;
+    .list-box {
+      padding: 18px 10px 15px;
+      border-bottom: solid 1px $grey-9;
+      .prize {
+        font-weight: 200;
+      }
+    }
+  }
+  .modal-body {
+    padding-left: 60px;
+    padding-right: 60px;
+    @include media-breakpoint-down(sm) {
+      padding: 11px 20px 12px;
+      overflow-y: scroll;
+      max-height: 350px;
+    }
+  }
+  .list-header {
+    border-bottom: 1px solid $grey-9;
+    span {
+      font-size: 12px;
+      line-height: 20px;
+      text-transform: uppercase;
+      color: $grey-2;
+    }
+  }
+}

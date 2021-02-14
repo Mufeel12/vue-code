@@ -1,0 +1,25 @@
+$fonts: (
+        'LG_Smart': ('lg', (
+                'LG_Smart_Regular' normal normal,
+                'LG_Smart_Regular_Italic' normal italic,
+                'LG_Smart_SemiBold' 600 normal,
+                'LG_Smart_Bold' 700 normal,
+                'LG_Smart_Bold_Italic' 700 italic,
+                'LG_Smart_Light' 300 normal
+        ))
+);
+
+// include font faces
+@each $name, $src in $fonts {
+    $directory: nth($src, 1);
+    $locals: nth($src, 2);
+
+    @each $local in $locals {
+        $weight: nth($local, 2);
+        $style: nth($local, 3);
+        $local: nth($local, 1);
+        $path: $directory + '/' + $local;
+
+        @include font-face($name, $local, $path, $weight, $style);
+    }
+}

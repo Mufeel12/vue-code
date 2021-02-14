@@ -1,0 +1,26 @@
+	.contrast-container {
+		padding: 24px 0px 8px 60px;
+		@include media-breakpoint-down(sm) {
+			padding: 15px;
+		}
+
+	.contrast {
+		text-align: center;
+		background-color: $white-2;
+		padding: 0px 15px 30px;
+		margin-bottom: 50px;
+		h2 {
+			font-weight: 600;
+			font-size: 40px;
+		}
+		a {
+			background-color: $burgundy;
+			color: $white;
+			border-radius: 3px;
+			font-size: 20px;
+			padding: 15px 85px;
+			text-decoration: none;
+			display: inline-block;
+		}
+	}
+}

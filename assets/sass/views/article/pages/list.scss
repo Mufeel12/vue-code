@@ -1,0 +1,44 @@
+.article-layout {
+	.bg-img {
+		height: 304px;
+		@include media-breakpoint-down(sm) {
+			max-height: 170px;
+		}
+		img {
+			width: 100%;
+			max-height: 304px;
+			object-fit: cover;
+			@include media-breakpoint-down(sm) {
+				max-height: 170px;
+			}
+		}
+	}
+	.p-color {
+		color: $burgundy;
+	}
+	.point-container {
+		position: absolute;
+		width: 87%;
+
+		.points_box {
+			background-color: $white-2;
+			border-radius: 0px 0px 3px 3px;
+			border-top: 2px solid $burgundy;
+			padding: 15px;
+			p {
+				color: $grey-2;
+				font-size: 18px;
+			}
+			h3 {
+				color: $burgundy;
+				font-size: 32px;
+				font-weight: 600;
+			}
+			a {
+				color: $burgundy;
+				font-size: 16px;
+				text-decoration: underline;
+			}
+		}
+	}
+}

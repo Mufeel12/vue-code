@@ -1,0 +1,52 @@
+.message{
+    border-bottom: 1px solid $grey-9;
+    margin: 20px 0;
+
+    &:last-child{
+         border-bottom: none;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+
+        .avatar, .avatar-image{
+            height: 35px !important;
+            width: 35px !important;
+            border-radius: 3px;
+        }
+
+        .title{
+            width: 100%;
+            font-weight: 600;
+            margin: auto 21px;
+            color: $grey-3;
+        }
+
+        .time{
+            margin: auto;
+            color: $grey-2;
+        }
+    }
+
+    .body{
+        margin: 25px 0;
+        color: $grey-2;
+        font-size: 20px;
+        white-space: normal;
+    }
+
+    .images{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 15px;
+
+        .attachment{
+            height: 55px;
+            width: 55px;
+            margin: 12px 12px 10px 0px;
+        }
+    }
+}

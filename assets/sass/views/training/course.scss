@@ -1,0 +1,141 @@
+.course-cover {
+    margin: 13px -11px;
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+
+    .course {
+        border-radius: 3px;
+        border: 1px solid #E2E2E2;
+        margin: 11px;
+        flex: 0 0 calc(33.3333% - 22px);
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+
+        @include media-breakpoint-down(sm) {
+            flex: 0 0 calc(50% - 22px);
+        }
+
+        @include media-breakpoint-down(xs) {
+            flex: 0 0 calc(100% - 22px);
+        }
+
+        .image-cover {
+            .image {
+                max-width: 100%;
+                width: 100%;
+                border-radius: 3px 3px 0 0;
+                height: 160px;
+            }
+        }
+
+        .card-body {
+            padding: 8px 24px 23px 24px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .info {
+            margin-bottom: 18px;
+            color: $grey-2;
+            font-weight: 300;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 18px;
+            }
+
+            .vertical-line{
+                padding: 0 7px;
+            }
+        }
+
+        .top {
+            display: flex;
+            justify-content: space-between;
+
+            .name {
+                line-height: 32px;
+                letter-spacing: .3px;
+                a {
+                    color: $grey-3;
+                    &:hover {
+                        color: $burgundy;
+                    }
+                }
+            }
+
+            .points {
+                color: $burgundy;
+                font-size: 24px;
+                font-weight: 600;
+                margin-left: auto;
+            }
+
+            .points-completed{
+                color: $green;
+            }
+        }
+
+        .bottom {
+            margin-top: auto;
+            display: flex;
+            justify-content: space-between;
+
+            .completed {
+                background-color: $green;
+                color: #ffffff;
+                border-radius: 25px;
+                padding: 5px 20px 5px 40px;
+                font-size: 1.1rem;
+                margin-top: -5px;
+                margin-left: auto;
+
+                background-position: 14px;
+                background-image: url('~@/assets/images/courses/check-mark-icon.png');
+                background-repeat: no-repeat;
+                background-size: 22px;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 20px;
+                    padding: 7px 25px 6px 45px;
+                    background-size: 25px;
+                }
+            }
+        }
+
+        .link {
+            margin: auto auto 3px 0;
+            font-size: 18px;
+            text-decoration: none;
+            position: relative;
+            color: $burgundy;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 20px;
+            }
+
+            &:after {
+                content: '';
+                width: 100%;
+                height: 1px;
+                position: absolute;
+                bottom: 1px;
+                left: 0;
+                background-color: $burgundy;
+            }
+
+            &:hover {
+                color: $grey-3;
+
+                @include media-breakpoint-down(sm) {
+                    font-size: 20px;
+                }
+
+                &:after {
+                    background-color: $grey-3;
+                }
+            }
+        }
+    }
+}

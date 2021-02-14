@@ -1,0 +1,268 @@
+.auth-content-box {
+    padding: 80px 0 70px 0;
+
+    .card-wrapper {
+        display: flex;
+        flex-direction: column;
+        max-width: 480px;
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .heading-division {
+        font-weight: 600;
+        line-height: 44px;
+        margin: 45px 0 0 0;
+    }
+
+    .lg-logo {
+        margin-bottom: 40px;
+
+        img {
+            max-width: 204px;
+            user-select: none;
+            pointer-events: none;
+        }
+    }
+
+    .mt-20 {
+        margin-top: 20px;
+
+        &-md {
+            @include media-breakpoint-down(sm) {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .card {
+        border: 0;
+        border-radius: 0;
+        padding: 64px 60px 60px;
+        margin-bottom: 12px;
+        width: 100%;
+
+        @include media-breakpoint-down(md) {
+            padding: 30px 20px;
+        }
+    }
+
+    .heading {
+        h1 {
+            display: flex;
+            align-items: center;
+            line-height: 44px;
+            margin-bottom: 20px;
+            font-weight: 600;
+
+            span:not(.additional-info) {
+                word-break: break-word;
+                margin-right: 15px;
+            }
+        }
+
+        .additional-info {
+            white-space: nowrap;
+            display: inline-flex;
+            font-weight: normal;
+            font-size: 16px;
+            text-align: center;
+            color: $grey-2;
+            transition: color .2s;
+            margin-left: auto;
+            position: relative;
+            top: 5px;
+        }
+    }
+
+    .additional-text {
+        color: $grey-2;
+        text-decoration: underline;
+        transition: color .2s;
+        margin: 20px auto 0 auto;
+        display: flex;
+
+        &:hover {
+            color: $burgundy;
+        }
+    }
+
+    .contacts {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+
+        a {
+            color: $grey-2;
+            margin-right: auto;
+            text-decoration: underline;
+            transition: color .2s;
+
+            + a {
+                margin-top: 8px;
+            }
+
+            &:hover {
+                color: $burgundy;
+            }
+        }
+    }
+
+    .input-cover {
+        .input-label {
+            margin-bottom: 3px;
+            padding-left: 12px;
+            color: $grey-2;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .row {
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+
+        [class*="col-"] {
+            padding: 0 10px;
+        }
+    }
+
+    .lead {
+        line-height: 28px;
+        letter-spacing: .3px;
+        color: $grey-2;
+        margin: 0;
+
+        a {
+            color: $grey-2;
+            text-decoration: underline;
+            transition: color .2s;
+
+            &:hover {
+                color: $burgundy;
+            }
+        }
+    }
+
+    form {
+        margin-top: 30px;
+
+        .form-group {
+            + .form-group {
+                margin-top: 20px;
+            }
+        }
+    }
+
+    .btn-submit {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .card-underblock {
+        color: $grey-2;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+
+    .underblock-additional {
+        text-align: left;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+
+        a {
+            color: $grey-2;
+            transition: color .2s;
+            text-decoration: underline;
+
+            &:hover {
+                color: $burgundy;
+            }
+        }
+    }
+
+    .progress-steps-wrapper {
+        margin-top: 27px;
+
+        .progress-steps {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 -.5rem .5rem;
+
+            &-header {
+                margin-bottom: 15px;
+            }
+
+            &-title {
+                font-size: 1.25rem;
+                font-weight: 600;
+                display: flex;
+                align-items: center;
+
+                .icon {
+                    margin-right: 12px;
+                    position: relative;
+                    top: -3px;
+
+                    g {
+                        stroke: $burgundy;
+                    }
+                }
+            }
+        }
+
+        .progress-step {
+            flex: 1;
+            margin: 0 .5rem;
+
+            &-title {
+                color: $grey-2;
+                font-size: 1rem;
+                line-height: 20px;
+            }
+
+            &-bar {
+                height: .25rem;
+                border-radius: 2px;
+                background-color: $white-2;
+                margin-bottom: 11px;
+
+                &.success {
+                    background-color: $green;
+                }
+            }
+        }
+    }
+
+    .need-help {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+
+        &:hover {
+            .icon-wrapper {
+                background-color: $burgundy;
+                color: #fff;
+            }
+
+            .need-help-title {
+                color: $grey-3;
+            }
+        }
+
+        .icon-wrapper {
+            border-radius: 50%;
+            background-color: #fff;
+            transition: background-color .2s;
+        }
+
+        .need-help-title {
+            margin-left: 12px;
+            color: $grey-2;
+            position: relative;
+            top: 3px;
+        }
+    }
+}

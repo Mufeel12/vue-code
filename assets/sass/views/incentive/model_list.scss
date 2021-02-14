@@ -1,0 +1,78 @@
+.focus_model {
+  .models_list {
+    box-shadow: 0px 0px 10px $grey-2;
+  }
+  .bd-lg-modal-xl {
+    background: $grey-11;
+  }
+  .heading {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+  }
+  p {
+    color: $grey-2;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .focus_model_body {
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: $white;
+    position: relative;
+    @include media-breakpoint-down(sm) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  .close {
+    font-size: 36px;
+    span{
+      font-weight: 400;
+    }
+  }
+  a.close_x {
+    color: $grey-2;
+    position: absolute;
+    right: 15px;
+  }
+  .show {
+    transition: opacity 0.15s linear;
+    display: block;
+  }
+  .modal-content {
+    border: none;
+  }
+  .modal-body {
+    padding: 0;
+  }
+  .modal-header {
+    border: none;
+    padding-left: 60px;
+    padding-right: 40px;
+    @include media-breakpoint-down(sm) {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+  }
+  .table {
+    thead {
+      tr:first-child {
+        td {
+          font-size: 12px;
+          line-height: 20px;
+          border: none;
+        }
+      }
+    }
+    td {
+      padding: 20px 10px 20px 10px;
+      color: $grey-3;
+      font-size: 16px;
+    }
+  }
+  .model-table {
+    overflow-y: scroll;
+    max-height: 680px;
+  }
+}

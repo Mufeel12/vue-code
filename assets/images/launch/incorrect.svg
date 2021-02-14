@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="20px" viewBox="0 0 21 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55.2 (78181) - https://sketchapp.com -->
+    <title>25B1CD5E-2F31-4D2E-A545-7480ABFE8EBD</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Asset-Artboard-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icons/16x16/check-copy-icons/20x20/success" transform="translate(0.451110, 0.000000)">
+            <circle id="Oval" fill="#FF2A2A" cx="10" cy="10" r="10"></circle>
+            <g id="icons/20x20/check-icons/20x20/close" transform="translate(4.000000, 4.000000)" fill="#FFFFFF">
+                <g id="Group" transform="translate(1.200000, 1.200000)">
+                    <rect id="Rectangle" transform="translate(4.800000, 4.800000) rotate(-45.000000) translate(-4.800000, -4.800000) " x="-1.2" y="4.2" width="12" height="1.2"></rect>
+                    <rect id="Rectangle-Copy-2" transform="translate(4.800000, 4.800000) rotate(45.000000) translate(-4.800000, -4.800000) " x="-1.2" y="4.2" width="12" height="1.2"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

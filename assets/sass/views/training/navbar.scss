@@ -1,0 +1,123 @@
+.navbar-block{
+    .training-navbar {
+        background-color: $burgundy;
+        flex: 1;
+        display: flex !important;
+        align-items: center;
+        padding: 10px 0px 10px 60px;
+
+        .main-nav {
+            padding: 0;
+            margin: 0;
+
+            .list {
+                padding: 0;
+                margin: 0 -15px;
+                display: flex;
+                align-items: center;
+                list-style: none;
+            }
+
+            .item {
+                padding: 0 15px;
+            }
+
+            .link {
+                font-size: 20px;
+                color: #fff;
+                line-height: 28px;
+                font-weight: 300;
+                text-decoration: none;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 10px 20px;
+            background: white;
+            border-bottom: 1px solid $grey-9;
+
+            .navbar-brand{
+                padding: 20px 0;
+
+                .lg-logo{
+                    height: 2rem;
+                    width: auto;
+                }
+            }
+
+            .navbar-toggler{
+                border: none;
+                box-shadow: none;
+                outline: none;
+
+                &:hover, &:active, &:focus{
+                    border: none;
+                    box-shadow: none;
+                    outline: none;
+                }
+            }
+
+            .navbar-toggler-icon {
+                background-image: url('~@/assets/images/nav-burger-close.svg');
+                background-size: 130%;
+            }
+
+            .navbar-toggler-active{
+                background-image: url('~@/assets/images/nav-burger-open.png');
+                background-size: 100%;
+            }
+        }
+    }
+
+    .navbar-dropdown{
+        .profile{
+            background-color: $burgundy;
+            margin: 20px;
+            border-radius: 0.3rem;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+
+            .stats {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .lead {
+                    font-size: 24px;
+
+                    @include media-breakpoint-down(xs) {
+                        font-size: 16px;
+                    }
+                }
+
+                .count {
+                    font-size: 32px;
+                    text-align: left;
+
+                     @include media-breakpoint-down(xs) {
+                        font-size: 28px;
+                    }
+                }
+            }
+
+            .image-cover {
+                flex: 0 0 70px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                width: 70px;
+                height: 70px;
+            }
+        }
+
+        .navbar-cover {
+            margin: 40px 30px;
+
+            .link {
+                font-size: 28px;
+            }
+        }
+    }
+}

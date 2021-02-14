@@ -1,0 +1,46 @@
+.process_result {
+  background: $burgundy;
+  padding: 32px;
+  border: solid 1px;
+  border: 1px solid $burgundy;
+  border-radius: 3px;
+  .prgs {
+    font-size: 24px;
+    line-height: 28px;
+    color: $white;
+  }
+  p {
+    color: $white;
+  }
+  .result {
+    font-size: 32px;
+    line-height: 44px;
+    float: right;
+  }
+  .info:hover .tooltip {
+    visibility: visible;
+  }
+  .info {
+    position: relative;
+    .tooltip {
+      left: -123px;
+      bottom: 32px;
+      background: $white;
+      border: 1px solid $grey-5;
+      p {
+        color: $grey-3;
+      }
+      h4 {
+        font-weight: 600;
+        color: $grey-3;
+        font-size: 20px;
+      }
+      .arrow {
+        &:after,
+        &:before {
+          border-top-color: $white;
+        }
+      }
+    }
+  }
+}

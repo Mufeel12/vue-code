@@ -1,0 +1,43 @@
+.all_prize {
+    border: 1px solid $grey-9;
+    border-bottom: none;
+    border-radius: 3px 3px 0 0;
+    .list-box {
+        border-bottom: solid 1px #d2cece;
+        padding: 17px 20px 17px;
+        margin-bottom: 0px;
+       
+        .price {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 40px;
+        }
+    }
+    p {
+        margin-bottom: 0px;
+    }
+    .serial-no {
+        color: $grey-2;
+        border-radius: 100%;
+        width: 36px;
+        height: 36px;
+        display: inline-block;
+        text-align: center;
+        margin-right: 10px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+    .circle-box {
+        color: $white;
+    }
+    .grey {
+        background-color: $grey-4;
+    }
+    .yellow {
+        background-color: $yellow;
+    }
+    .burgundy {
+        background-color: $orange;
+        ;
+    }
+}

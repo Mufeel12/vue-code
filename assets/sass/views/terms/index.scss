@@ -1,0 +1,14 @@
+.terms-container {
+  padding: 24px 0px 8px 60px;
+  .title {
+    color: $grey-3;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 64px;
+  }
+  p,
+  span {
+    font-size: 20px;
+    color: $grey-2;
+  }
+}

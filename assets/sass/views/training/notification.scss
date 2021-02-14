@@ -1,0 +1,16 @@
+.notification{
+    border-bottom: 1px solid $grey-9;
+    padding: 25px 25px 6px 25px;
+
+    .title{
+        margin-bottom: 0;
+        font-size: 18px;
+        letter-spacing: 0.2px;
+        font-weight: 600;
+    }
+
+    .subtitle{
+        letter-spacing: 0.2px;
+        color: $grey-2;
+    }
+}

@@ -1,0 +1,187 @@
+.quiz-container {
+  padding: 32px 60px 230px 60px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .left-size, .right-side {
+    margin-top: 80px;
+  }
+
+  .left-size {
+    flex: 0 1 71%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .right-side {
+    margin-left: 60px;
+    flex: 0 1 24%;
+
+    hr {
+      background-color: $burgundy;
+      height: 1px;
+    }
+
+    p {
+      margin-top: 20px;
+      margin-bottom: 0;
+      color: $grey-2;
+      font-size: 18px;
+      line-height: 24px;
+    }
+
+    .questions-counter {
+      color: $burgundy;
+      font-size: 32px;
+      font-weight: 600;
+      line-height: 44.8px;
+    }
+  }
+
+  .quiz-title {
+    color: $grey-3;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+  }
+
+  .action-link {
+    color: $burgundy;
+    font-family: "LG_Smart";
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .back-icon {
+    display: inline-block;
+    color: $burgundy;
+    height: 8px;
+    width: 8px;
+    transform: rotate(-90deg);
+    margin-right: 12px;
+  }
+
+  .question-title {
+    color: $grey-3;
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .answers-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 48px;
+
+    .answer-container {
+      display: inline-flex;
+      flex: 1 1 100%;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      min-height: 82px;
+      border-radius: 3px;
+      box-sizing: border-box;
+      border: 1px solid #E2E2E2;
+      margin-top: 20px;
+      padding: 22px 28px 16px 30px;
+      cursor: pointer;
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+
+      &.selected {
+        background-color: $white-2;
+        border: 1px solid $silver;
+      }
+
+      .answer-number {
+        flex: 0 1 3%;
+        margin-right: 26px;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 32px;
+        text-align: center;
+        color: $burgundy;
+      }
+
+      .answer-text {
+        flex: 0 1 72%;
+        color: $grey-2;
+        font-size: 20px;
+        line-height: 28px;
+      }
+
+      .answer-indicator {
+        &.correct {
+          color: $green;
+          font-size: 20px;
+          line-height: 28px;
+          text-align: right;
+        }
+
+        &.incorrect {
+          color: $red;
+          font-size: 20px;
+          line-height: 28px;
+          text-align: right;
+        }
+
+        .icon-check {
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 20px;
+          background-color: $green;
+          margin-left: 12px;
+          border-radius: 15px;
+        }
+
+        span {
+          min-width: 72px;
+        }
+
+        .icon-error {
+          width: 20px;
+          height: 20px;
+          line-height: 20px;
+          font-size: 20px;
+          margin-left: 12px;
+        }
+      }
+    }
+  }
+
+  .quiz-controls-container {
+    min-height: 104px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    background-color: $white-2;
+    margin-top: 40px;
+
+    .next-question-button {
+      height: 64px;
+      width: 286px;
+      color: $white;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      cursor: pointer;
+    }
+  }
+}

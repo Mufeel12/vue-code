@@ -1,0 +1,60 @@
+.training-progress {
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+    padding: 41px 80px 46px 80px;
+
+    @include media-breakpoint-down(sm) {
+        padding: 30px 50px;
+        border-top: none;
+        margin: 0 -50px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding: 30px 20px;
+        border-top: none;
+        margin: 0 -20px;
+    }
+
+    .text-cover {
+        display: flex;
+        align-items: center;
+        padding-left: 3px;
+        letter-spacing: 0.4px;
+
+        p {
+            margin: 0;
+            font-size: 16px;
+            color: $grey-2;
+            font-weight: 300;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 18px;
+            }
+
+            @include media-breakpoint-down(xs) {
+                font-size: 16px;
+            }
+        }
+
+        .percent {
+            margin-left: auto;
+            margin-right: 4px;
+        }
+    }
+
+    .progress {
+        background-color: #F2F2F2;
+        border-radius: 4px;
+        position: relative;
+        height: 4px;
+
+        .line {
+            top: 0;
+            left: 0;
+            position: absolute;
+            height: 4px;
+            background-color: $burgundy;
+            border-radius: 4px;
+        }
+    }
+}

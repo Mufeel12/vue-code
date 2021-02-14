@@ -1,0 +1,12 @@
+.products {
+  padding: 18px 45px 0px 58px;
+  @include media-breakpoint-down(sm) {
+    padding: 28px 20px 0px 20px;
+  }
+  .large-button {
+    line-height: 2;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

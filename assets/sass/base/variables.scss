@@ -1,0 +1,42 @@
+$font-family-base: "LG_Smart", sans-serif;
+$white: #ffffff;
+$white-2: #f2f2f2;
+$white-3: #efefef;
+$white-4: #cccccc;
+$text-color: #262626;
+$grey-1: #6d6e70;
+$grey-2: #6b6b6b;
+$grey-3: #333333;
+$grey-4: #bbbbbb;
+$grey-5: #ccc;
+$grey-6: #929191;
+$grey-7: #ced4da;
+$grey-8: #737373;
+$grey-9: #E2E2E2;
+$grey-10: #f2f2f2;
+$grey-11: rgba(107,107,107,0.38824);
+$dusty-gray: #999999;
+$silver: #cccccc;
+$green-1: #7db101;
+$venetian-red: #720024;
+$burgundy: #a50034;
+$green: #62a60a;
+$red: #ff2a2a;
+$orange: #d15b05;
+$body-bg: #efefef;
+$error: $red;
+$yellow: #edc00d;
+$mobile: 575px;
+$desktop-width: 1024px;
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 560px,
+  // Medium screen / tablet
+  md: 960px,
+  // Large screen / desktop
+  lg: 1280px,
+  // Extra large screen / wide desktop
+  xl: 1600px
+);
